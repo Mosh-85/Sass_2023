@@ -1,0 +1,16 @@
+body h1 {
+  color: pink;
+}
+body h2 {
+  color: rgb(14, 184, 184);
+}
+body p {
+  -moz-columns: red;
+       columns: red;
+}
+
+/*
+h1{
+    color: blue;
+}
+*//*# sourceMappingURL=main.css.map */
