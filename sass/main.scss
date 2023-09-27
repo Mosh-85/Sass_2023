@@ -1,17 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import 'variabels';
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+.float-left-50{
+    float: left;
+    width: 50%;
+    padding: 1rem;
+}
+
+.float-right-50{
+    float: right;
+    width: 50%;
+    padding: 1rem;
+}
+
 body{
-    h1{
-        color: pink;
+    font-family:'IBM Plex Sans', sans-serif;; 
+    margin: 0;
 
-    }
-    h2{
-        color: rgb(14, 184, 184);
-    }
+    header{
+        @extend .float-left-50;
 
+        nav{
+            ul{
+                padding: none;
+                margin: none;
+
+                li{
+                    display: inline-block;
+                    padding: 1rem;
+                    background-color: cadetblue;
+                    border-radius: 2rem;    
+                                    
+                }
+            }
+        }
+
+        #logo{
+            font: $logo-font   
+        }
+
+        #contact{
+            background-color: $grey-btn;
+            padding: 1rem;
+            border-radius: 2rem;
+            float: right;
+
+            &:hover{
+                background-color: black;
+                color: azure;
+            }
+        }
+
+        a{
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+
+        }
+    }
+    main{
+        @extend .float-left-50;
+    }
+    figure{
+        @extend .float-right-50;
+        margin: 0;
+
+        img{
+            width: 100%;
+        }
+    }
+    footer{
+        clear: both;
+        padding: 1rem;
+    }
 }
 
-
-/*
-h1{
-    color: blue;
-}
-*/
