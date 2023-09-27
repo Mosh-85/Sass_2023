@@ -4,10 +4,6 @@ body h1 {
 body h2 {
   color: rgb(14, 184, 184);
 }
-body p {
-  -moz-columns: red;
-       columns: red;
-}
 
 /*
 h1{
